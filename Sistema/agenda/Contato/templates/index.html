@@ -1,0 +1,71 @@
+{% extends 'base.html'%}
+{%load static from staticfiles %}
+{% block main %}
+<div id="wowslider-container1">
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="{% static "data1/images/pythonlogomaster.png"%}" alt="Python" title="Python" id="wows1_0"/></li>
+		<li><a href="#"><img src="{% static "data1/images/sqlite370.svg.png"%}" alt="jquery slider" title="SQLite" id="wows1_1"/></a></li>
+		<li><img src="{% static "data1/images/20141207_1457431.jpg"%}" alt="2014-12-07_14-57-431" title="2014-12-07_14-57-431" id="wows1_2"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Python"><span><img src="{% static "data1/tooltips/pythonlogomaster.png"%}" alt="Python"/>1</span></a>
+		<a href="#" title="SQLite"><span><img src="{% static "data1/tooltips/sqlite370.svg.png"%}" alt="SQLite"/>2</span></a>
+		<a href="#" title="2014-12-07_14-57-431"><span><img src="{% static "data1/tooltips/20141207_1457431.jpg"%}" alt="2014-12-07_14-57-431"/>3</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="#"></a> </div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="{% static "engine1/wowslider.js"%}"></script>
+	<script type="text/javascript" src="{% static "engine1/script.js"%}"></script>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+	  </div>
+	  <div class="row">
+	  </div>
+	  <div class="row">
+	  </div>
+	  <div class="row">
+	  
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">O que é python?</h5>
+
+            <p class="light" align = "justify">Python é uma linguagem de programação de alto nível , interpretada, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.A linguagem foi projetada com a filosofia de enfatizar a importância do esforço do programador sobre o esforço computacional. Prioriza a legibilidade do código sobre a velocidade ou expressividade. Combina uma sintaxe concisa e clara com os recursos poderosos de sua biblioteca padrão e por módulos e frameworks desenvolvidos por terceiros. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">O que é SQLite?	</h5>
+
+            <p class="light" align = "justify">SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL embutido. Programas que usam a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo SGBD separado. SQLite não é uma biblioteca cliente usada para conectar com um grande servidor de banco de dados, mas sim o próprio servidor. A biblioteca SQLite lê e escreve diretamente para e do arquivo do banco de dados no disco.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">O que é Django?</h5>
+
+            <p class="light" align = "justify">Django é um Framelivre e open source framework de aplicações web, escrito em Python, que segue o controlador de visualização de modelo (MVC) padrão de arquitetura. Ele é mantido pelo Django Software Foundation (DSF), uma organização independente estabelecida como uma organização sem fins lucrativos.O objetivo principal do Django é facilitar a criação de sites, banco de dados orientado complexos. Django enfatiza a capacidade de reutilização e "capacidade de conexão" de componentes, o rápido desenvolvimento, eo princípio da não repetir-se. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+  {% endblock %}
